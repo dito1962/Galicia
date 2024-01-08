@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+/* -------------------------------------------------------------- */
+/* body
+/* -------------------------------------------------------------- */
+body {
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 38%, rgba(0,212,255,1) 100%);
+    background-image: url(./images/galicia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* -------------------------------------------------------------- */
+/* header
+/* -------------------------------------------------------------- */
+header {
+    position: fixed;
+    width: 75%;     
+    padding:32px 64px;
+} 
+/* -------------------------------------------------------------- */
+/* menu level 1
+/* -------------------------------------------------------------- */
+header ul {
+    width: 100%;
+    margin:0;
+    padding:0;
+    list-style:none;      
+    display: flex;  
+    font-size: 24px;    
+    text-shadow: 0px 16px 16px #333;  
+}
+header ul li {   
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding:0;       
+}
+header ul li a {
+    position: relative;
+    text-decoration:none;
+    display:flex;
+    margin: 0;
+    padding: 4px;
+    padding-left: 8px;
+    color:#fff;  
+}
+header ul li a:hover{
+    background-color:#f00; 
+    border-bottom: 2px solid #ccc;
+    color: #fff;
+    font-weight: 500;
+}
+/* ----------------------------------------------------- */
+/* menu level 2
+/* ----------------------------------------------------- */
+header ul li ul {
+    position:absolute;
+    display:none;
+    width:100%;
+	top:100%;
+    margin-top: 1px;  
+    margin-left: -1px;
+    font-size: 18px;  
+}
+header ul li ul li {  
+ 	top:100%;    
+    margin-top: 1px;   
+}
+header li:hover > ul {
+    display:block;
+}
+/* ----------------------------------------------------- */
+/* menu level 3
+/* ----------------------------------------------------- */
+header ul li ul li ul {
+    position:absolute;
+    display:none;
+	white-space: nowrap;   
+	top:0;
+    left: 100%;
+    margin-top: -2px;
+    margin-left: 2px;
+    font-size: 18px;      
+}
+header ul li ul li a.arrow::after {
+    content:'';
+    position:absolute;
+    display:inline;
+    top:50%;
+    margin-top:-4px;
+    margin-bottom:-4px;
+    right:4px;
+    border-width:6px;
+    border-style:solid;
+    border-color: transparent transparent transparent #fff ; 
+}
+/* -------------------------------------------------------------- */
+/* section 
+/* -------------------------------------------------------------- */
+.main {    
+    position: absolute;
+    top: 0px;
+    right:0;
+    width:20%;
+    height:100vh;   
+}
+#title {  
+    position: absolute;  
+    top: 0;
+    right: 32px;
+    text-align: right;
+    font-size: 64px;
+    font-weight: 700;
+    text-shadow: 0px 16px 16px #333;
+    color: #fff;       
+}    
+#year {  
+    position: absolute;  
+    top: 64px;
+    right: 32px;
+    text-align: right;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 0px 16px 16px #333;
+    color: #fff;  
+}
+#copyright {
+    position: absolute;   
+    top: 128px;
+    right: 32px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 700;
+    text-shadow: 0px 16px 16px #333;
+    color: #fff;     
+}
+#version {
+    position: absolute;  
+    top: 144px;
+    right: 32px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 700;
+    text-shadow: 0px 16px 16px #333;
+    color: #fff;     
+}
+#work {  
+    position: absolute;  
+    bottom: 0;
+    right: 32px;
+}   

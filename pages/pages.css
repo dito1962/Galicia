@@ -1,0 +1,107 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+.container {
+    position: absolute;
+    overflow: hidden;
+    width: 1280px;
+    height: 720px;    
+    background: #111;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;  
+    margin: auto;
+    border: 1px #333 solid;
+}    
+
+.slider img {
+    position: relative;
+    width: 1280px;
+    height: 720px; 
+    display: none;   
+} 
+
+img.active {
+    display: block;
+    object-fit: contain;
+}
+
+/* -------------------------------------------------------------- */
+/* Buttons
+/* -------------------------------------------------------------- */
+.up {   
+    position: absolute;
+    top: 16px;
+    width: 48px;
+    height: 48px;
+    right: 1rem; 
+    border-radius: 25%;   
+}
+/* .video {   
+    position: absolute;
+    top: 92px;
+    width: 48px;
+    height: 48px;
+    right: 1rem; 
+    border-radius: 25%;   
+} */
+.prev {  
+    position: absolute;
+    bottom:16px;    
+    left: 16px; 
+    width: 48px;
+    height: 48px;
+    border-radius: 25%;   
+} 
+.next {     
+    position: absolute; 
+    bottom:16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 25%;  
+} 
+/* -------------------------------------------------------------- */
+/* Description/date
+/* -------------------------------------------------------------- */
+.description {  
+    position: absolute;  
+    top: 0;
+    left: 1rem;
+    width:75%;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;   
+    text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333; 
+}
+.exif1  {
+    position: absolute; 
+    top: 3.6rem;
+    left: 1rem;
+    width: 75%;        
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;    
+    text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
+  }
+  .exif2 {
+    position: absolute;   
+    top: 5.7rem;
+    left: 1rem;
+    width: 75%; 
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;    
+    text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
+  }
